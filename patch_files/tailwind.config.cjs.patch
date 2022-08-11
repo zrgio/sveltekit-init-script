@@ -1,0 +1,13 @@
+--- ../../delete/tailwind.config.cjs	2022-08-11 00:30:36.228719600 -0400
++++ tailwind.config.cjs	2022-08-10 23:52:29.573833300 -0400
+@@ -1,6 +1,9 @@
+ /** @type {import('tailwindcss').Config} */
+ module.exports = {
+-  content: [],
++  mode: 'jit',
++  content: [
++    './src/**/*.{html,js,svelte,ts}'
++  ],
+   theme: {
+     extend: {},
+   },
