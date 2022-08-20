@@ -2,7 +2,7 @@
 
 npm install -D --save-dev
 
-npm install -D --save-dev tailwindcss@latest postcss@latest autoprefixer@latest svelte-preprocess@latest bookit@latest
+npm install -D --save-dev tailwindcss@latest postcss@latest autoprefixer@latest svelte-preprocess@latest @leveluptuts/bookit@latest
 
 npx tailwindcss init tailwind.config.cjs -p
 

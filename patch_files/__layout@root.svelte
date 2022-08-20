@@ -1,9 +1,9 @@
 <script lang="ts" context="module">
-	import { bookit_state } from '../../../node_modules/@leveluptuts/bookit/state';
-	import { layoutLoad as load, Book } from '../../../node_modules/@leveluptuts/bookit/';
+	import { bookit_state } from '@leveluptuts/bookit/state';
+	import { layoutLoad as load, Book } from '@leveluptuts/bookit/';
 	export { load };
 </script>
 
 <Book>
-	<slot />
+	<slot/>
 </Book>
