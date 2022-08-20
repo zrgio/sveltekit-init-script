@@ -1,24 +1,34 @@
 # SvelteKit + TailwindCSS = 💙
 
-First, create a new SvelteKit project
+Create a new SvelteKit project
 
 ```sh
 npm create svelte@latest new-project
 ```
 
-Then, copy both `bootstrap.sh` and `patch_files` to the project directory, and run the script
+Copy both `bootstrap.sh` and `patch_files` to the project directory
 
 ```sh
-cp -r bootstrap.sh patch_files new-project/ && ./bootstrap.sh
+cp bootstrap.sh new-project/ && cp -r patch_files new-project
+```
+
+Run the bootstrap script
+
+```sh
+./bootstrap.sh
 ```
 
 Cleaning up
 
 ```sh
-rm -rf bootstrap.sh patch_files
+rm -rf bootstrap.sh patch_files package.json.orig
 ```
 
-Also, if you visit `http://localhost:port/book` you should find [Bookit]*(https://github.com/leveluptuts/bookit/)
+## Bookit
+
+If you visit `http://localhost:port/book` you should find [Bookit](https://github.com/leveluptuts/bookit/), which is extremly helpful when designing new components.
+
+A folder named `bookit` will be created in the `src` directory, with an example component inside it. You may use this folder when prototyping new components.
 
 Done! go build your idea
 
