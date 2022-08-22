@@ -1,6 +1,0 @@
-+++ package.json.1	2022-08-11 01:07:31.421587800 -0400
-@@ -1,2 +1,2 @@
--		"dev": "vite dev",
--		"build": "vite build",
-+		"dev": "TAILWIND_MODE=watch vite dev",
-+		"build": "TAILWIND_MODE=build vite build",

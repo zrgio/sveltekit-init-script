@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+project=$1
+
+cd "$project"
+
+npm install -D
+
+npx svelte-add@latest tailwindcss
+
+yarn install
+
+npm install -D @leveluptuts/bookit@latest flowbite-svelte
+
+mkdir "src/routes/book"
+touch "src/routes/book/+page.svelte"
+
+cp "$HOME/.sveltekit-init/+layout-root.svelte" "src/routes/"
+cp "$HOME/.sveltekit-init/+layout@root.svelte" "src/routes/book/"
+cp -f "$HOME/.sveltekit-init/tailwind.config.cjs" .
+cp "$HOME/.sveltekit-init/[parent]-[title].svelte" "src/routes/book/"
+
+mkdir src/bookit
+
+cp "$HOME/.sveltekit-init/Basic.story.svelte" "src/bookit/"
+cp "$HOME/.sveltekit-init/TestComponent.svelte" "src/bookit/"
+cp "$HOME/.sveltekit-init/Docs.Basic.story.svelte" "src/bookit/"

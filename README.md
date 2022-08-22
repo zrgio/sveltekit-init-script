@@ -1,34 +1,44 @@
-# SvelteKit + TailwindCSS = 💙
+# SvelteKit + TailwindCSS + Flowbite + Bookit = 💙
 
-Create a new SvelteKit project
+## Installation and usage
 
-```sh
-npm create svelte@latest new-project
-```
-
-Copy both `bootstrap.sh` and `patch_files` to the project directory
+Copy `sveltekit-init` to `/usr/local/bin`, and copy `.sveltekit-init` to your `$HOME` directory
 
 ```sh
-cp bootstrap.sh new-project/ && cp -r patch_files new-project
+sudo cp sveltekit-init /usr/local/bin; cp -r .sveltekit-init $HOME
 ```
 
-Run the bootstrap script
+Create a SvelteKit project
+
+```
+npm create svelte@next new-project
+```
+
+Then run the script
 
 ```sh
-./bootstrap.sh
+sveltekit-init path/to/new-project
 ```
 
-Cleaning up
+## [SvelteKit](https://kit.svelte.dev/)
 
-```sh
-rm -rf bootstrap.sh patch_files package.json.orig
-```
+An easy to use framework for lightweight interactive websites
 
-## Bookit
+## [TailwindCSS](https://tailwindcss.com/)
 
-If you visit `http://localhost:port/book` you should find [Bookit](https://github.com/leveluptuts/bookit/), which is extremly helpful when designing new components.
+CSS made easier
 
-A folder named `bookit` will be created in the `src` directory, with an example component inside it. You may use this folder when prototyping new components.
+## [Flowbite](https://flowbite.com/)
+
+450+ Components built on top of TailwindCSS, making website prototyping way faster
+
+## [Bookit](https://github.com/leveluptuts/bookit/)
+
+An extremely helpful tool for component design.
+
+A directory named `bookit` will be created in the `src` directory of your project, with an example component inside it. You may use this directory when prototyping new components.
+
+###
 
 Done! go build your idea
 
