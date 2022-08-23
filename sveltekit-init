@@ -8,9 +8,9 @@ npm install -D
 
 npx svelte-add@latest tailwindcss
 
-yarn install
+npm install -D
 
-npm install -D @leveluptuts/bookit@latest flowbite-svelte
+npm install -D @leveluptuts/bookit@latest daisyui@latest
 
 mkdir "src/routes/book"
 touch "src/routes/book/+page.svelte"

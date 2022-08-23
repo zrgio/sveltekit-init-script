@@ -28,9 +28,9 @@ An easy to use framework for lightweight interactive websites
 
 CSS made easier
 
-## [Flowbite](https://flowbite.com/)
+## [DaisyUI](https://daisyui.com/)
 
-450+ Components built on top of TailwindCSS, making website prototyping way faster
+Components built on top of TailwindCSS, making website prototyping way faster
 
 ## [Bookit](https://github.com/leveluptuts/bookit/)
 
