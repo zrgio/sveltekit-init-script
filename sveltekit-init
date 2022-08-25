@@ -12,17 +12,11 @@ npm install -D
 
 npm install -D @leveluptuts/bookit@latest daisyui@latest
 
-mkdir "src/routes/book"
-touch "src/routes/book/+page.svelte"
+# TailwindCSS Installation
+cp -f "$HOME/.sveltekit-init/tailwind/vite.config.ts" .
+cp -f "$HOME/.sveltekit-init/tailwind/tailwind.config.cjs" .
 
-cp -f "$HOME/.sveltekit-init/svelte.config.cjs" .
-cp -f "$HOME/.sveltekit-init/tailwind.config.js" .
-cp "$HOME/.sveltekit-init/+layout-root.svelte" "src/routes/"
-cp "$HOME/.sveltekit-init/+layout@root.svelte" "src/routes/book/"
-cp "$HOME/.sveltekit-init/[parent]-[title].svelte" "src/routes/book/"
-
-mkdir src/bookit
-
-cp "$HOME/.sveltekit-init/Basic.story.svelte" "src/bookit/"
-cp "$HOME/.sveltekit-init/TestComponent.svelte" "src/bookit/"
-cp "$HOME/.sveltekit-init/Docs.Basic.story.svelte" "src/bookit/"
+# Bookit Installation
+cp -r "$HOME/.sveltekit-init/bookit/book" "src/routes/"
+cp -r "$HOME/.sveltekit-init/bookit/bookit" "src/bookit"
+cp "$HOME/.sveltekit-init/bookit/+layout-root.svelte" "src/routes/"

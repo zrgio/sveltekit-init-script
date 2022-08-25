@@ -5,7 +5,7 @@
 Copy `sveltekit-init` to `/usr/local/bin`, and copy `.sveltekit-init` to your `$HOME` directory
 
 ```sh
-sudo cp sveltekit-init /usr/local/bin; cp -r .sveltekit-init $HOME
+sudo cp -f sveltekit-init /usr/local/bin; cp -r .sveltekit-init $HOME
 ```
 
 Create a SvelteKit project
