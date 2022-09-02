@@ -1,3 +1,7 @@
+# DEPRECATED 
+
+Use [ready-svelte-go](https://github.com/zrgio/ready-svelte-go) instead
+
 # SvelteKit + TailwindCSS + Flowbite + Bookit = 💙
 
 ## Installation and usage
